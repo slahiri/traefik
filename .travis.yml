@@ -27,7 +27,7 @@ before_script:
   - make validate
   - make binary
 script:
-  - travis_retry make test-unit
+  - make test-unit
   - travis_retry make test-integration
 after_failure:
   - docker ps
